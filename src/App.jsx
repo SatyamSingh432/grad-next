@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSec";
-
+import Coaching from "./components/Coaching";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div style={{ backgroundColor: "#f2fafe" }}>
       <NavBar />
       <HeroSection />
+      <Coaching />x
     </div>
   );
 }
