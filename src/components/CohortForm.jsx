@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 
 import "../styles/CohortForm.css";
+import { submitUser } from "../utils/api";
 
 const CohortForm = () => {
   const navigate = useNavigate();
@@ -20,19 +21,25 @@ const CohortForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!formData.name || !formData.email || !formData.phone) {
       alert("Please fill all fields");
       return;
     }
-
-    console.log("Form Submitted:", formData);
+    try {
+      const res = await submitUser(
+        formData.name,
+        formData.email,
+        formData.phone
+      );
+      console.log("Form Submitted:", res);
+    } catch (err) {
+      console.error(err);
+      alert("Error submitting data, please try again later");
+    }
     navigate("/");
-    setTimeout(() => {
-      alert("Form Submitted");
-    }, 1000);
   };
 
   return (
