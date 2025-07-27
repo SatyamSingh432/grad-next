@@ -1,7 +1,7 @@
 import React from "react";
 import mohit from "../assets/mohit.avif";
 import aditi from "../assets/aditi.avif";
-import bcg from "../assets/BCG.avif";
+import bcg from "../assets/bcg-logo.avif";
 
 import "../styles/Testimonial.css";
 
