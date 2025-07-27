@@ -65,3 +65,21 @@
 .dot.active {
   background-color: #202a44;
 }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .mentorship-title {
+    font-size: 2rem;
+  }
+
+  .mentorship-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .mentorship-heading {
+    font-size: 2rem;
+  }
+
+  .mentorship-description {
+    font-size: 1.8rem;
+  }
+}

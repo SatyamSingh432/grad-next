@@ -59,3 +59,12 @@
   padding-bottom: 30px;
   padding: 0 20px 35px 20px;
 }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .cohort-title {
+    font-size: 2.5rem;
+  }
+  .cohort-subtitle {
+    font-size: 18px;
+  }
+}

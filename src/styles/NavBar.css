@@ -63,7 +63,6 @@
   display: flex;
   border-radius: 6px;
   padding: 10px 16px;
-
   border: 2px solid #2e345c;
   background-color: #fff;
   color: #2e345c;
@@ -125,4 +124,85 @@
 
 .nav-links a:hover .underline {
   width: 100%;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .login {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .login-btn {
+    width: 100%;
+    align-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .login {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .login-btn {
+    width: 100%;
+    align-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .login {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .login-btn {
+    width: 100%;
+    align-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar {
+    justify-content: space-around;
+    padding: 20px 20px;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
 }

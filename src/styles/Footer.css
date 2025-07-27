@@ -82,6 +82,7 @@
   color: white;
   padding: 40px;
   text-align: center;
+  width: 100vw;
 }
 
 .footer-bottom .links {
@@ -100,4 +101,20 @@
 
 .footer-bottom .links a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .brand-name {
+    font-size: 3rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+  .description {
+    font-size: 16px;
+  }
 }
