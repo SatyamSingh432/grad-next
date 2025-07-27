@@ -1,4 +1,4 @@
-import { EMAIL_TYPE } from "../emails/emailService";
+import { EMAIL_TYPE } from "../emails/emailService.js";
 
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 const TWO_DAY_MS = 2 * ONE_DAY_MS;
