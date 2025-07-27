@@ -4,6 +4,7 @@ import Coaching from "./components/Coaching";
 import Stats from "./components/Stats";
 import CohortSection from "./components/CohortSection";
 import Testimonial from "./components/Testimonial";
+import BookSession from "./components/BookSession";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
       <Stats />
       <CohortSection />
       <Testimonial />
+      <BookSession />
     </div>
   );
 }
