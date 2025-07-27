@@ -8,13 +8,12 @@ import Testimonial from "./Testimonial";
 import BookSession from "./BookSession";
 import Footer from "./Footer";
 
-import mckinseyLogo from "../assets/mckinsey.avif";
-import bcgLogo from "../assets/bcg.avif";
-import bainLogo from "../assets/bain.avif";
+import mckinseyLogo from "../assets/mckinsey-logo.avif";
+import bcgLogo from "../assets/bcg-logo.avif";
+import bainLogo from "../assets/bain-logo.avif";
 import meeting from "../assets/meeting.png";
 import peers from "../assets/peers.png";
 import self from "../assets/self.png";
-
 import "../styles/HeroSec.css";
 
 export default function HeroSection() {
