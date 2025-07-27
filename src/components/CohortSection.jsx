@@ -12,6 +12,16 @@ import { Pagination } from "swiper/modules";
 
 import "../styles/CohortSection.css";
 
+import imgOne from "../assets/01.png";
+import imgTwo from "../assets/02.png";
+import imgThree from "../assets/03.png";
+import imgFour from "../assets/04.png";
+import imgFive from "../assets/05.png";
+import imgSix from "../assets/06.png";
+import imgSeven from "../assets/07.png";
+import imgEight from "../assets/08.png";
+import imgNine from "../assets/09.png";
+
 export default function CohortSection() {
   const navigate = useNavigate();
 
@@ -47,15 +57,33 @@ export default function CohortSection() {
           modules={[Pagination]}
           className="mySwiper-cohort"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide>
+            <img src={imgOne} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgTwo} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgThree} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgFour} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgFive} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgSix} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgSeven} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgEight} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={imgNine} />
+          </SwiperSlide>
         </Swiper>
       </div>
       <div className="features">

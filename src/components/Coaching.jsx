@@ -9,6 +9,16 @@ import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 import "../styles/Coaching.css";
 
+import imgOne from "../assets/01.png";
+import imgTwo from "../assets/02.png";
+import imgThree from "../assets/03.png";
+import imgFour from "../assets/04.png";
+import imgFive from "../assets/05.png";
+import imgSix from "../assets/06.png";
+import imgSeven from "../assets/07.png";
+import imgEight from "../assets/08.png";
+import imgNine from "../assets/09.png";
+
 export default function Coaching() {
   return (
     <section className="coaching-section">
@@ -55,31 +65,31 @@ export default function Coaching() {
             className="mySwiper"
           >
             <SwiperSlide className="swiper-img-sec">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              <img src={imgOne} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              <img src={imgTwo} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              <img src={imgThree} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              <img src={imgFour} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              <img src={imgFive} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              <img src={imgSix} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              <img src={imgSeven} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              <img src={imgEight} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              <img src={imgNine} />
             </SwiperSlide>
           </Swiper>
         </div>
