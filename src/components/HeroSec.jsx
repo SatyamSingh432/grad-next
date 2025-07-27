@@ -1,5 +1,13 @@
 import React from "react";
+
 import NavBar from "./NavBar";
+import Coaching from "./Coaching";
+import Stats from "./Stats";
+import CohortSection from "./CohortSection";
+import Testimonial from "./Testimonial";
+import BookSession from "./BookSession";
+import Footer from "./Footer";
+
 import mckinseyLogo from "../assets/mckinsey.avif";
 import bcgLogo from "../assets/bcg.avif";
 import bainLogo from "../assets/bain.avif";
@@ -52,6 +60,12 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
+      <Coaching />
+      <Stats />
+      <CohortSection />
+      <Testimonial />
+      <BookSession />
+      <Footer />
     </>
   );
 }
