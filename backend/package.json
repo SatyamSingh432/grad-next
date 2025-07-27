@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "API for gradnext",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
