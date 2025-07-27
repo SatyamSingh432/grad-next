@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router";
+
 import "../styles/navBar.css";
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="logo">gradnext</div>
@@ -39,7 +42,14 @@ const NavBar = () => {
         <button className="casebuddy-btn">CaseBuddy</button>
 
         <div className="login">
-          <button className="login-btn">Log In</button>
+          <button
+            className="login-btn"
+            onClick={() => {
+              navigate("/auth");
+            }}
+          >
+            Log In
+          </button>
         </div>
       </div>
     </nav>
