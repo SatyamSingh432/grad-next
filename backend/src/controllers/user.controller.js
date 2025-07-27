@@ -18,7 +18,7 @@ const submitUser = (req, res) => {
   users.push(user);
   saveUsers();
   sendEmail(user, EMAIL_TYPE.SELECTION);
-  res.json({ message: "Form submitted and selection email sent." });
+  return res.json({ message: "Form submitted and selection email sent." });
 };
 
 export { submitUser };
