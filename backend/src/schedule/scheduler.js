@@ -13,36 +13,39 @@ export function runScheduler(users, sendEmail, saveUsers) {
       if (user.paid || user.replied) return;
 
       const submittedTime = new Date(user.submitted_at).getTime();
-
       const clickedTime = user.clicked_at
         ? new Date(user.clicked_at).getTime()
         : null;
+      const emailOpened = user.opened;
+      const lastEmailType = user.last_email_sent;
+      const linkClicked = user.clicked;
+      const userPaid = user.paid;
 
       // Case 1 - If unread: Send a reminder email after 2 days
       if (
-        !user.opened &&
-        now - submittedTime >= ONE_MIN_MS && // // TODO: fix to 2 days
-        user.last_email_sent === EMAIL_TYPE.SELECTION
+        !emailOpened &&
+        now - submittedTime >= TWO_DAY_MS &&
+        lastEmailType === EMAIL_TYPE.SELECTION
       ) {
         sendEmail(user, EMAIL_TYPE.REMINDER_ONE);
       } else if (
         // Case 2 - If read but not clicked: Send a follow-up with more benefits of the program
-        user.opened &&
-        !user.clicked &&
-        user.last_email_sent !== EMAIL_TYPE.REMINDER_TWO
+        emailOpened &&
+        !linkClicked &&
+        lastEmailType !== EMAIL_TYPE.REMINDER_TWO
       ) {
         sendEmail(user, EMAIL_TYPE.REMINDER_TWO);
       } else if (
         // Case 3 - If clicked but not paid: Send a final reminder
-        user.clicked &&
-        !user.paid &&
+        linkClicked &&
+        !userPaid &&
         now - clickedTime >= TWO_DAY_MS &&
-        user.last_email_sent !== EMAIL_TYPE.FINAL
+        lastEmailType !== EMAIL_TYPE.FINAL
       ) {
         sendEmail(user, EMAIL_TYPE.FINAL);
       }
     });
 
     saveUsers();
-  }, ONE_MIN_MS); // TODO: fix to one hour
+  }, ONE_HOUR_MS);
 }

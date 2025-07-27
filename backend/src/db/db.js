@@ -13,7 +13,6 @@ const usersData = await fs.readFile(
 const users = JSON.parse(usersData);
 
 const saveUsers = () => {
-  console.log(JSON.stringify(users, null, 2));
   writeFileSync(
     path.join(__dirname, "users.json"),
     JSON.stringify(users, null, 2)
