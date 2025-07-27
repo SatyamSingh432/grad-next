@@ -16,6 +16,7 @@ import peers from "../assets/peers.png";
 import self from "../assets/self.png";
 
 import "../styles/HeroSec.css";
+
 export default function HeroSection() {
   return (
     <>
