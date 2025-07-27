@@ -4,7 +4,7 @@
   align-items: center;
   width: 100vw;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 160px 20px 80px 20px;
   text-align: center;
   font-family: "Segoe UI", sans-serif;
   gap: 30px;
@@ -86,4 +86,10 @@
   color: #5f6476;
   font-size: 0.95rem;
   line-height: 1.4;
+}
+
+.header-container {
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
 }
