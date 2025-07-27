@@ -22,6 +22,10 @@ app.get("/", (req, res) => {
 app.use("/api/user", userRoutes);
 app.use("/api/log", emailTracking);
 
+app.get("/api/status", (req, res) => {
+  res.json(users);
+});
+
 runScheduler(users, sendEmail, saveUsers);
 
 app.listen(PORT, () => {
