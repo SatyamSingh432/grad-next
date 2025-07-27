@@ -3,6 +3,7 @@ import { FaTv } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa6";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +13,8 @@ import { Pagination } from "swiper/modules";
 import "../styles/CohortSection.css";
 
 export default function CohortSection() {
+  const navigate = useNavigate();
+
   return (
     <section className="cohort-section">
       <h1 className="cohort-title">Consulting Cohort 101</h1>
@@ -81,7 +84,14 @@ export default function CohortSection() {
         </div>
       </div>
 
-      <button className="cohort-btn">Enrol for Sep Cohort</button>
+      <button
+        className="cohort-btn"
+        onClick={() => {
+          navigate("/cohort");
+        }}
+      >
+        Enrol for Sep Cohort
+      </button>
     </section>
   );
 }
