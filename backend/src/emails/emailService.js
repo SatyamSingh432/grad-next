@@ -10,6 +10,9 @@ const BASE_URL = process.env.BASE_URL;
 
 const EMAIL_TYPE = {
   SELECTION: "selection",
+  REMINDER_ONE: "reminder1",
+  REMINDER_TWO: "reminder2",
+  FINAL: "final",
 };
 
 function sendEmail(user, type) {

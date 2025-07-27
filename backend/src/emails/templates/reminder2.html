@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Hi {{name}},</p>
+    <p>We noticed you opened the email but haven’t clicked through yet.</p>
+    <p>
+      This program could be the game-changer in your career — don’t miss out!
+    </p>
+    <p>
+      <a href="{{BASE_URL}}/api/log/click/{{id}}">Secure your spot now</a>
+    </p>
+    <img
+      src="{{BASE_URL}}/api/log/open/{{id}}"
+      width="1"
+      height="1"
+      style="display: none" />
+  </body>
+</html>

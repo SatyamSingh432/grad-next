@@ -2,6 +2,10 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 
+import { runScheduler } from "./schedule/scheduler.js";
+import { saveUsers, users } from "./db/db.js";
+import { sendEmail } from "./emails/emailService.js";
+
 import userRoutes from "./routes/user.routes.js";
 import emailTracking from "./routes/emailTracking.routes.js";
 
@@ -17,6 +21,8 @@ app.get("/", (req, res) => {
 
 app.use("/api/user", userRoutes);
 app.use("/api/log", emailTracking);
+
+runScheduler(users, sendEmail, saveUsers);
 
 app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);

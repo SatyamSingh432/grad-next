@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Hi {{name}},</p>
+    <p>
+      This is your final reminder to confirm your spot in Consulting Cohort 101.
+    </p>
+    <p>Enrollment closes soon — act now if you're still interested!</p>
+    <p>
+      <a href="{{BASE_URL}}/api/log/click/{{id}}"
+        >Enroll before it’s too late</a
+      >
+    </p>
+    <img
+      src="{{BASE_URL}}/api/log/open/{{id}}"
+      width="1"
+      height="1"
+      style="display: none" />
+  </body>
+</html>

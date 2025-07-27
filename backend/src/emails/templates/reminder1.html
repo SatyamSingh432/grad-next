@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Hi {{name}},</p>
+    <p>
+      Just a reminder that your seat in Consulting Cohort 101 is reserved, but
+      you haven’t opened our previous email.
+    </p>
+    <p>
+      <a href="{{BASE_URL}}/api/log/click/{{id}}"
+        >Click here to confirm your spot</a
+      >
+    </p>
+    <img
+      src="{{BASE_URL}}/api/log/open/{{id}}"
+      width="1"
+      height="1"
+      style="display: none" />
+  </body>
+</html>
