@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSec";
 import Coaching from "./components/Coaching";
 import Stats from "./components/Stats";
 import CohortSection from "./components/CohortSection";
+import Testimonial from "./components/Testimonial";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
       <Coaching />
       <Stats />
       <CohortSection />
+      <Testimonial />
     </div>
   );
 }

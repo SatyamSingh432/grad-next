@@ -1,0 +1,82 @@
+.testimonial-wrapper {
+  background-color: #f5faff;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.testimonial-heading {
+  font-size: 3.4rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-subheading {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.testimonial-image-section {
+  text-align: center;
+  max-width: 180px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.testimonial-image {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #eee;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1f2a56;
+}
+
+.company-logo {
+  margin-top: 8px;
+  height: 50px;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #2c3e509f;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.person-cont {
+  display: flex;
+  flex-direction: column;
+}
