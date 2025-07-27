@@ -1,14 +1,1 @@
-[
-  {
-    "id": "1753633003224",
-    "name": "GRV",
-    "email": "test@test.com",
-    "phone": "1233",
-    "opened": false,
-    "clicked": false,
-    "paid": false,
-    "replied": false,
-    "last_email_sent": "selection",
-    "submitted_at": "2025-07-27T16:16:43.224Z"
-  }
-]
+[]

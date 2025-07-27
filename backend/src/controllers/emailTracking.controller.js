@@ -2,7 +2,6 @@ import { saveUsers, users } from "../db/db.js";
 
 const trackEmailOpen = (req, res) => {
   const user = users.find((u) => u.id === req.params.id);
-  console.log(user);
   if (user) {
     user.opened = true;
     saveUsers();
