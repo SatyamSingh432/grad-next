@@ -1,0 +1,61 @@
+.cohort-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #1f2a56;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cohort-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cohort-subtitle {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 48px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: flex;
+  gap: 15px;
+
+  align-items: center;
+  font-size: 18px;
+  max-width: 300px;
+}
+
+.cohort-btn {
+  background-color: #1f2a56;
+  color: white;
+  padding: 14px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cohort-btn:hover {
+  background-color: #2f3a66;
+}
+
+.cohort-swiper {
+  padding: 30px 0;
+}
+
+.mySwiper-cohort {
+  width: 80vw;
+  padding-bottom: 30px;
+  padding: 0 20px 35px 20px;
+}
