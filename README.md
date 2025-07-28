@@ -64,16 +64,12 @@ git clone https://github.com/SatyamSingh432/grad-next.git
 cd grad-next
 ```
 
----
-
 ### 2. Frontend Setup (React + Vite)
 
 ```bash
 npm install
 npm run dev
 ```
-
----
 
 ### 3. Backend Setup (Express)
 
