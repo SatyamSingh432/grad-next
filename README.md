@@ -3,6 +3,10 @@
 A full-stack automation workflow that collects cohort interest via a form and sends behavior-based follow-up emails using Brevo. Frontend of the **GradNext** platform, built using **React** and **Vanilla CSS**. It includes responsive components like a navbar, forms, and program information tailored for desktop, tablet, and mobile views. Backend is built using Express.js with JSON as db.
 
 ---
+<img width="1440" height="682" alt="Screenshot 2025-07-28 at 11 15 40 AM" src="https://github.com/user-attachments/assets/4852c7a4-617a-4bfd-afaf-f440382a2d78" />
+
+
+---
 
 ## Tech Stack
 
@@ -104,6 +108,12 @@ node index.js
 - Real-time behavior tracking
 - Scheduler-based reminders
 - Easily swappable to real DB or SMTP
+
+---
+
+<img width="988" height="220" alt="Screenshot 2025-07-28 at 11 12 33 AM" src="https://github.com/user-attachments/assets/357aeb1b-ddc3-468d-a353-bb7466601ef0" />
+
+
 
 ---
 
