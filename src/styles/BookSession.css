@@ -83,3 +83,21 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 639px) {
+  .mentorship-title {
+    font-size: 1.8rem;
+  }
+
+  .mentorship-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .mentorship-heading {
+    font-size: 1.8rem;
+  }
+
+  .mentorship-description {
+    font-size: 1.4rem;
+  }
+}

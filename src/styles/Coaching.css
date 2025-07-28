@@ -11,13 +11,13 @@
 
 .coaching-section-left {
   text-align: left;
-  max-width: 40vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
 }
 .coaching-section-right {
   display: flex;
-  max-width: 50%;
+  width: 50%;
 
   /* flex: 1; */
   flex-direction: column;
@@ -205,5 +205,27 @@
   }
   .cta-buttons button {
     width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .coaching-section {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+  .coaching-section-left {
+    width: 90vw;
+  }
+  .cta-buttons {
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  .cta-buttons .cta-block {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .coaching-section-right {
+    width: 90vw;
+    text-align: center;
   }
 }

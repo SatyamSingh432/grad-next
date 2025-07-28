@@ -68,3 +68,10 @@
     font-size: 18px;
   }
 }
+@media (max-width: 639px) {
+  .features {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
